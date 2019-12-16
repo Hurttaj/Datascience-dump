@@ -1,0 +1,926 @@
+{
+  "wfs:FeatureCollection": {
+    "-xmlns:wfs": "http://www.opengis.net/wfs/2.0",
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "-xmlns:xlink": "http://www.w3.org/1999/xlink",
+    "-xmlns:om": "http://www.opengis.net/om/2.0",
+    "-xmlns:omso": "http://inspire.ec.europa.eu/schemas/omso/3.0",
+    "-xmlns:gml": "http://www.opengis.net/gml/3.2",
+    "-xmlns:gmd": "http://www.isotc211.org/2005/gmd",
+    "-xmlns:swe": "http://www.opengis.net/swe/2.0",
+    "-xmlns:gmlcov": "http://www.opengis.net/gmlcov/1.0",
+    "-xmlns:inspire": "urn:x-inspire:specification:gmlas:BaseTypes:3.2",
+    "-xmlns:sam": "http://www.opengis.net/sampling/2.0",
+    "-xmlns:sams": "http://www.opengis.net/samplingSpatial/2.0",
+    "-xmlns:target": "http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0",
+    "-timeStamp": "2018-10-12T08:23:56Z",
+    "-numberMatched": "7",
+    "-numberReturned": "7",
+    "-xsi:schemaLocation": "     http://www.opengis.net/wfs/2.0 http://schemas.opengis.net/wfs/2.0/wfs.xsd     http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd     http://www.opengis.net/sampling/2.0 http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd     http://www.opengis.net/samplingSpatial/2.0 http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd     http://www.opengis.net/swe/2.0 http://schemas.opengis.net/sweCommon/2.0/swe.xsd     http://inspire.ec.europa.eu/schemas/omso/3.0 http://inspire.ec.europa.eu/schemas/omso/3.0/SpecialisedObservations.xsd     http://www.isotc211.org/2005/gmd http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd     http://xml.fmi.fi/namespace/om/atmosphericfeatures/1.0 http://xml.fmi.fi/schema/om/atmosphericfeatures/1.0/atmosphericfeatures.xsd",
+    "wfs:member": [
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-hDmJp7N_J.6fec2mQJOhWsQVwMqJTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q2OePLuw8tO..x17Wpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrVCzbdLp1m38suPDz6OnWPZp24em_Zvz.XTrnjy7sPLTvdOs_LTkAA--",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-0",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-0",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-0",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_1km" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-0",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-0",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-0-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-0-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-0-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-0-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-0-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-0-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_1km&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-F5ZQE1qPv7hP9zyEltV1KMduPnGJTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q2OePLuw8tO._BYwmpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrVCzbdLp1m38suPDz6OnWPZp24em_Zvz.XTrnjy7sPLTvdOs_LTkAA--",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-1",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-1",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-1",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_A1B" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-1",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-1",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-1-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-1-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-1-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-1-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-1-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-1-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_A1B&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-2FtMhhuJWQirOq3Ts91rtLU9MA.JTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q2OePLuw8tO._BYxmpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrVCzbdLp1m38suPDz6OnWPZp24em_Zvz.XTrnjy7sPLTvdOs_LTkAA--",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-2",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-2",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-2",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_A1F" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-2",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-2",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-2-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-2-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-2-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-2-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-2-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-2-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_A1F&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-ZlGvTEkZG5DRokKiZ1iOd3axPL2JTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q2OePLuw8tO._BY1Gpw5b9WXH00791amXhzzunTRmybNzn038suTj1y8vN_TkrVCzbdLp1m38suPDz6OnWPZp24em_Zvz.XTrnjy7sPLTvdOs_LTkAA--",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-3",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-3",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-3",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_A1T" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-3",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-3",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-3-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-3-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-3-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-3-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-3-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-3-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_A1T&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-GnfpZTCvl6th0QISvt6h_Q2DIdeJTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q1uePLuw8tO._BZNThy36suPpp37q1MvDnndOmjNk2bnPpv5ZcnHrl5eb.nJWqFm26XTrNv5ZceHn0dOsezTtw9N.zfn8unXPHl3YeWne6dZ.WnIA",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-4",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-4",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-4",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_A2" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-4",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-4",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-4-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-4-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-4-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-4-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-4-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-4-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_A2&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-J8ZbKWPuUJ4RiCw2fRsUYOe.mDOJTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q1uePLuw8tO._CYtThy36suPpp37q1MvDnndOmjNk2bnPpv5ZcnHrl5eb.nJWqFm26XTrNv5ZceHn0dOsezTtw9N.zfn8unXPHl3YeWne6dZ.WnIA",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-5",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-5",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-5",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_B1" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-5",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-5",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-5-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-5-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-5-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-5-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-5-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-5-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_B1&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "omso:GridSeriesObservation": {
+          "-gml:id": "WFS-tPkVVMBAc.mmfBFRdPkTIIWILc.JTowqoWbbpdOs2_llx4efR06x7NO3D037N.fy6dc8eXdh5ad7p1n5ackLMzb.W3D0rKz8tOJk2M3XZsk7umXl2w7JDU38tOfTuqaduW119ChQjQ4ct.Trjy8q1uePLuw8tO._CZNThy36suPpp37q1MvDnndOmjNk2bnPpv5ZcnHrl5eb.nJWqFm26XTrNv5ZceHn0dOsezTtw9N.zfn8unXPHl3YeWne6dZ.WnIA",
+          "om:phenomenonTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "ph-time-1-6",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:resultTime": {
+            "gml:TimeInstant": {
+              "-gml:id": "rs-time-1-6",
+              "gml:timePosition": "2010-01-01T00:00:00Z"
+            }
+          },
+          "om:validTime": {
+            "gml:TimePeriod": {
+              "-gml:id": "vt-time-1-6",
+              "gml:beginPosition": "2010-01-01T00:00:00Z",
+              "gml:endPosition": "2070-12-01T00:00:00Z"
+            }
+          },
+          "om:procedure": { "-xlink:href": "http://xml.fmi.fi/inspire/process/scenario_B2" },
+          "om:parameter": {
+            "om:NamedValue": {
+              "om:name": { "-xlink:href": "http://inspire.ec.europa.eu/codeList/ProcessParameterValue/value/numericalModel/analysisTime" },
+              "om:value": {
+                "gml:TimeInstant": {
+                  "-gml:id": "analysis-time---1-6",
+                  "gml:timePosition": "2010-01-01T00:00:00Z"
+                }
+              }
+            }
+          },
+          "om:observedProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" },
+          "om:featureOfInterest": {
+            "sams:SF_SpatialSamplingFeature": {
+              "-gml:id": "s-1-6",
+              "sam:sampledFeature": {
+                "target:SurfaceWeatherTargetArea": {
+                  "-gml:id": "sampledFeatureTarget-6-1",
+                  "target:geometry": {
+                    "gml:Polygon": {
+                      "-gml:id": "sampledFeatureTarget-polygon-6-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:exterior": {
+                        "gml:LinearRing": {
+                          "gml:coordinates": "
+					    15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+                                        "
+                        }
+                      }
+                    }
+                  },
+                  "target:observableProperty": { "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature,MonthlyPrecipitation&language=eng&units=grib" }
+                }
+              },
+              "sams:shape": {
+                "gml:Polygon": {
+                  "-gml:id": "samplingFeatureTarget-polygon-6-1",
+                  "gml:exterior": {
+                    "gml:LinearRing": {
+                      "gml:coordinates": "
+					15.9266005600384 59.6104733943912 15.9266005600384 70.1416989043066 33.1731696183752 70.1416989043066 33.1731696183752 59.6104733943912 15.9266005600384 59.6104733943912
+	  	                "
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "om:result": {
+            "gmlcov:RectifiedGridCoverage": {
+              "-gml:id": "rgd-6-1",
+              "gml:domainSet": {
+                "gml:RectifiedGrid": {
+                  "-gml:id": "rg-6-1",
+                  "-dimension": "2",
+                  "gml:limits": {
+                    "gml:GridEnvelope": {
+                      "gml:low": "0 0",
+                      "gml:high": "67 116"
+                    }
+                  },
+                  "gml:axisLabels": "Lat Long",
+                  "gml:origin": {
+                    "gml:Point": {
+                      "-gml:id": "origin-point-6-1",
+                      "-srsName": "http://www.opengis.net/def/crs/EPSG/0/4326",
+                      "-srsDimension": "2",
+                      "gml:pos": "15.9266005600384 70.1416989043066"
+                    }
+                  },
+                  "gml:offsetVector": [
+                    "9.85074626865672 0",
+                    "0 9.91379310344828"
+                  ]
+                }
+              },
+              "gml:rangeSet": {
+                "gml:File": {
+                  "gml:fileReference": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/download?producer=scenario_B2&param=MonthlyMeanTemperature,MonthlyPrecipitation&bbox=15.9266005600384,59.6104733943912,33.1731696183752,70.1416989043066&origintime=2010-01-01T00:00:00Z&starttime=2010-01-01T00:00:00Z&endtime=2070-12-01T00:00:00Z&format=grib2&projection=epsg:4326",
+                  "gml:fileStructure": { "-codeSpace": "http://apps.ecmwf.int/codes/grib/param-db" },
+                  "gml:mimeType": "application/octet-stream"
+                }
+              },
+              "gml:coverageFunction": {
+                "gml:CoverageMappingRule": { "gml:ruleDefinition": "Linear" }
+              },
+              "gmlcov:rangeType": {
+                "swe:DataRecord": {
+                  "swe:field": [
+                    {
+                      "-name": "MonthlyMeanTemperature",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyMeanTemperature&language=eng&units=grib"
+                    },
+                    {
+                      "-name": "MonthlyPrecipitation",
+                      "-xlink:href": "http://data.fmi.fi/fmi-apikey/f96fb776-05ee-49ea-a6f2-359464bd166b/meta?observableProperty=forecast&param=MonthlyPrecipitation&language=eng&units=grib"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
